@@ -9,7 +9,13 @@
     </head>
     <body>
 
-        <h1>{{text}}</h1>
+        <h1>Result</h1>
+        <p>{{text}}</p>
+        {%if result == 0%}
+            <h1 style="color:green;">Not_spam</h1>
+        {%else%}
+            <h1 style="color:red;">spam</h1>
+        {% endif %}
 
     </body>
 </html>
